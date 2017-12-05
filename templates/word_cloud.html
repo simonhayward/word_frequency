@@ -1,0 +1,14 @@
+<html>
+    <head>
+      <title>Word Cloud</title>
+    </head>
+    <body>
+      <div>
+          <p>
+            {% for item in top_words %}
+             <span style="font-size:{{ item[1] }}em">{{ item[0] }}</span>&nbsp;
+            {% end %}
+          </p>
+      </div>
+    </body>
+   </html>
